@@ -3,6 +3,6 @@
 int main()
 {
     printf("Hello world!\n");
-    printf("Hello too from testbranch!\n");
+    printf("Updated Hello from testbranch!\n");
     return 0;
 }
