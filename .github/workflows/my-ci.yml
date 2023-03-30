@@ -1,0 +1,17 @@
+name: My CI
+on:
+  push:
+    branches:
+      - 'master'
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  default-build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: make
+      run: make
+    - name: run
+      run: ./hello
